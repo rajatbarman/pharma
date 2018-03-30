@@ -84,6 +84,7 @@ class Auth extends Component {
             <div className={styles.container}>
                 <h1 className={styles.heading}>Login</h1>
                 <Input
+                    autoFocus
                     label="Email"
                     value={this.state.email}
                     onChange={this.handleEmailChange}

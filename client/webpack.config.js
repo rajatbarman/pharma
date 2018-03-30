@@ -93,6 +93,11 @@ module.exports = function(options) {
         new HtmlWebpackPlugin({
           template: getAbsPath('src/index.html'),
         }),
+
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            comments: false,
+        }),
     ];
 
     return {

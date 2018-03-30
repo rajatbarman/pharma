@@ -1,6 +1,8 @@
 const Express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
+const compression = require('compression')
+
 // Register models
 require('./models');
 const bodyParser = require('body-parser');
@@ -26,6 +28,7 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
 const routes = require('./routes');
 
 // Apply body Parser and server public assets and routes
+app.use(compression());
 app.use(bodyParser.json({ limit: '20mb' }));
 app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
 app.use(session({ secret: 'guitar flute', resave: false, saveUninitialized: true, }));

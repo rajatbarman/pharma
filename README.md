@@ -2,8 +2,6 @@
 
 Steps - 
 
-Install and run mongodb
-
 Run `npm i`
 
 Run `npm run build` to build js bundle through webpack

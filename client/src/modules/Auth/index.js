@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Login from './components/Login';
 import Input from 'src/widgets/Input';
 import Button from 'src/widgets/Button';
 import { bindActionCreators } from 'redux';

@@ -1,0 +1,35 @@
+# pharma
+
+Steps - 
+
+Install and run mongodb
+
+Run `npm i`
+
+Run `npm run build` to build js bundle through webpack
+
+Run `npm start` to start the node server
+
+Navigate to `localhost:8000`
+
+### Credentials ###
+doctor@pharma.com
+123456
+
+pharmacist@pharma.com
+123456
+
+patient1@pharma.com
+123456
+
+patient2@pharma.com
+123456
+
+patient3@pharma.com
+123456
+
+patient4@pharma.com
+123456
+
+patient5@pharma.com
+123456

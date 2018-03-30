@@ -1,5 +1,5 @@
 const config = {
-  mongoURL: 'mongodb://localhost:27017/pharmeasy',
+  mongoURL: 'mongodb://rajat:rajat@ds229909.mlab.com:29909/pharma',
   port: 8000,
 };
 

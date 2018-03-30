@@ -1,5 +1,7 @@
 # pharma
 
+Built using Mongodb, Express and React
+
 Steps - 
 
 Run `npm i`

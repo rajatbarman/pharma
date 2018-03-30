@@ -1,0 +1,56 @@
+$gray-light: #EDEEEF;
+$gray-dark: #A1A6AD;
+$gray: #E7E8EA;
+$sky-blue: #55BBEA;
+$red: #EB5054;
+$black: #000;
+
+.label {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $gray-dark;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input, .textarea {
+    border: 1px solid $gray-light;
+    border-radius: 3px;
+    padding: 0 10px;
+    line-height: 40px;
+    color: $black;
+    resize: none;
+
+    &:focus {
+        border: 1px solid $sky-blue;
+    }
+
+    &.hasError {
+        border-color: $red;
+    }
+}
+
+.readonly {
+    background-color: #F6F6F7;
+    border: 1px solid $gray;
+    &:focus {
+        border: 1px solid $gray;
+    }
+}
+
+.textarea {
+    height: auto;
+    line-height: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+.error {
+    color: $red;
+}
+
+.enableResize {
+    resize: both;
+}
+

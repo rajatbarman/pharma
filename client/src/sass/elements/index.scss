@@ -1,0 +1,66 @@
+$color-placeholder: #BCBCBC;
+
+html,body {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-family: $font-family;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+}
+
+h1,h2,h3,h4 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+li {
+    list-style-type: none;
+}
+
+small {
+    font-size: 12px;
+}
+
+a {
+    color: #55BBEA;
+}
+
+img {
+    /* Makes sure image is never bigger than its parent */
+    max-width: 100%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $color-placeholder;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $color-placeholder;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $color-placeholder;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $color-placeholder;
+}

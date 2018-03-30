@@ -1,0 +1,21 @@
+# Dependencies
+*node_modules
+
+# Build
+client/dist
+
+# Logs
+client/*.log
+server/*.log
+*.log
+
+# Editors
+.idea/*
+*.iml
+*.sublime-*
+
+# Misc
+.DS_Store
+._.DS_Store
+._*
+*.sass-cache

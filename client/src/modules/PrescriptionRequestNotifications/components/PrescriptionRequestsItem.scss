@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 15px 0;
+}
+
+
+.btns {
+    display: flex;
+
+    svg {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}

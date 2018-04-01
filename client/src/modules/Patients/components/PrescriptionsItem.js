@@ -8,8 +8,6 @@ import withCurrentUser from 'src/shared/withCurrentUser';
 import Button from 'src/widgets/Button';
 import styles from './PrescriptionsItem.scss';
 
-const prescriptionImages = require.context('images/prescriptions', true, /.jpg$/);
-
 class PrescriptionsItem extends Component {
     static propTypes = {
         prescription: PropTypes.object,
@@ -65,7 +63,7 @@ class PrescriptionsItem extends Component {
                                     </p>
                                 ) : null
                             }
-                            <img src={prescriptionImages(`./${prescription.image}`)} />
+                            <img src={`/images/prescriptions/${prescription.id}`} />
                         </div>
                     ) : (
                         <div>

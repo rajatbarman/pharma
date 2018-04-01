@@ -25,7 +25,8 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
 });
 
 // const required modules
-const routes = require('./routes');
+const apiRoutes = require('./routes/apis');
+const imagesRoutes = require('./routes/images');
 
 // Apply body Parser and server public assets and routes
 app.use(compression());
@@ -33,7 +34,8 @@ app.use(bodyParser.json({ limit: '20mb' }));
 app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
 app.use(session({ secret: 'guitar flute', resave: false, saveUninitialized: true, }));
 app.use('/static', Express.static(path.resolve(__dirname, '../client/dist')));
-app.use('/api', routes);
+app.use('/api', apiRoutes);
+app.use('/images', imagesRoutes);
 
 app.get('/logout', function(req, res) {
     if (req.session.user)

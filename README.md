@@ -1,10 +1,10 @@
 # pharma
 
+Built using Mongodb, Express and React
+
 Steps - 
 
 Run `npm i`
-
-Run `npm run build` to build js bundle through webpack
 
 Run `npm start` to start the node server
 
